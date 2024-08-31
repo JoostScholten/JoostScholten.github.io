@@ -15,8 +15,8 @@ body {
 
 /* Top Bar Style */
 header {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff; /* Changed to white */
+    color: #000; /* Changed to black text */
     padding: 15px 0;
     position: fixed;
     width: 100%;
@@ -33,15 +33,22 @@ header .container {
     justify-content: space-between;
 }
 
-.logo img {
-    height: 40px;
-    width: auto;
+/* Logo and Company Name Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
-.company-name h1 {
+.logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px; /* Space between the logo and the company name */
+}
+
+.company-name {
     font-size: 24px;
-    margin-left: 10px;
     font-weight: 600;
+    color: #000;
 }
 
 nav ul {
@@ -54,7 +61,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000; /* Changed to black */
     text-decoration: none;
     font-size: 16px;
     padding: 5px 10px;
@@ -63,7 +70,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #444;
+    background-color: #ddd;
 }
 
 /* Hero Section */
@@ -82,7 +89,7 @@ nav ul li a:hover {
 
 /* Features Section */
 .features {
-    background-color: #f5f5f5;
+    background-color: #e0e0e0; /* Darker grey background */
     padding: 40px 0;
     display: flex;
     justify-content: center;
@@ -92,6 +99,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 40px; /* Increased space between logos */
 }
 
 .feature-item {
@@ -100,7 +108,7 @@ nav ul li a:hover {
 }
 
 .feature-item img {
-    width: 60px;
+    width: 120px; /* Twice as big */
     height: auto;
     margin-bottom: 10px;
 }
