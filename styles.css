@@ -81,12 +81,14 @@ nav ul li a:hover {
     padding: 20px 0;
     margin-top: 60px;
     position: relative;
+    overflow: hidden; /* Ensure overflow is hidden for better control */
 }
 
 .hero-image {
     width: 100%;
-    max-height: 500px; /* Increased height */
+    height: 500px; /* Adjust the height to make the head visible */
     object-fit: cover;
+    object-position: top; /* Ensure the chicken's head is visible */
     opacity: 0.8;
 }
 
@@ -121,7 +123,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #e5e5e5; /* Darker grey background */
+    background-color: #e0e0e0; /* Adjusted to match the grey background of logos */
     color: #333;
     padding: 40px 0;
     text-align: center;
@@ -132,7 +134,7 @@ nav ul li a:hover {
 }
 
 .feature-item img {
-    width: 100px; /* Larger icons */
+    width: 100px;
     margin-bottom: 20px;
 }
 
