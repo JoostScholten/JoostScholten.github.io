@@ -78,15 +78,16 @@ nav ul li a:hover {
     text-align: center;
     background-color: #000;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0; /* Reduced padding to make more content visible */
     margin-top: 60px;
     position: relative;
     overflow: hidden;
+    min-height: 300px; /* Reduced height */
 }
 
 .hero-image {
     width: 100%;
-    height: 500px; /* Adjusted height to make the chicken less zoomed in */
+    height: 300px; /* Reduced height */
     object-fit: cover;
     object-position: center top; /* Adjusted to show more of the chicken's head */
     opacity: 0.8;
@@ -94,23 +95,26 @@ nav ul li a:hover {
 
 .hero-text {
     position: absolute;
-    top: 50%;
+    top: 40%; /* Adjusted to move text slightly higher */
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
     text-align: center;
+    font-size: 14px; /* Reduced font size */
+    max-width: 90%;
 }
 
 .contact-button {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
+    margin-top: 10px; /* Reduced margin */
+    padding: 8px 16px; /* Slightly smaller button */
     background-color: #fff;
     color: #000;
     text-decoration: none;
     border: 2px solid #fff;
     border-radius: 5px;
     transition: background-color 0.3s;
+    font-size: 14px; /* Reduced font size for button */
 }
 
 .contact-button:hover {
@@ -125,7 +129,7 @@ nav ul li a:hover {
     align-items: center;
     background-color: #fff; /* Set to match the white color of the top bar */
     color: #333;
-    padding: 40px 0;
+    padding: 20px 0; /* Reduced padding to save space */
     text-align: center;
 }
 
@@ -134,19 +138,19 @@ nav ul li a:hover {
 }
 
 .feature-item h3 {
-    font-size: 22px;
+    font-size: 18px; /* Reduced font size */
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .feature-item img {
-    width: 100px;
-    margin-bottom: 20px;
+    width: 80px; /* Slightly smaller logos */
+    margin-bottom: 10px; /* Reduced margin below logos */
 }
 
 .feature-description {
-    font-size: 16px;
-    font-weight: bold; /* Made text below logos more bold */
+    font-size: 14px; /* Reduced font size */
+    font-weight: bold; 
 }
 
 /* Footer */
