@@ -15,8 +15,8 @@ body {
 
 /* Header */
 header {
-    background-color: #000; /* Header background set to black */
-    color: #fff; /* Header text color set to white */
+    background-color: #000; /* Set header background to black */
+    color: #fff; /* Set header text color to white */
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -25,8 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #333; /* Darker line for separation */
-    transition: background-color 0.3s ease; /* For fading effect */
+    border-bottom: 1px solid #333;
 }
 
 .header-container {
@@ -51,7 +50,7 @@ header {
 .company-name {
     font-size: 24px;
     font-weight: 600;
-    color: #fff; /* Set text to white */
+    color: #fff; /* Set company name text to white */
 }
 
 nav ul {
@@ -64,18 +63,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* Text color set to white */
+    color: #fff; /* Set navigation text to white */
     text-decoration: none;
     font-size: 16px;
     padding: 5px 10px;
-    transition: color 0.3s;
-    border: 1px solid #fff; /* Border for buttons */
+    border: 1px solid #fff; /* Add a white border for button effect */
     border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #000; /* Text color on hover */
-    background-color: #fff; /* Background color on hover */
+    color: #000;
+    background-color: #fff; /* Invert colors on hover */
 }
 
 /* Hero Section */
@@ -96,20 +94,20 @@ nav ul li a:hover {
 
 .side-image {
     width: 30%;
-    height: 500px; /* Fixed height for uniformity */
+    height: 500px;
     object-fit: cover;
 }
 
 .hero-text-container {
-    background-color: #000;
-    color: #fff;
-    width: 40%; /* Central container for text */
+    background-color: #000; /* Black background for text box */
+    color: #fff; /* White text */
+    width: 40%;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 500px; /* Match the height of the side images */
+    height: 500px;
 }
 
 .contact-button {
@@ -122,7 +120,6 @@ nav ul li a:hover {
     border: 2px solid #fff;
     border-radius: 5px;
     transition: background-color 0.3s;
-    font-size: 14px;
 }
 
 .contact-button:hover {
@@ -135,7 +132,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #000; /* Set to match black background */
+    background-color: #000; /* Match with black background */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -158,7 +155,7 @@ nav ul li a:hover {
 
 .feature-description {
     font-size: 14px;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 /* Footer */
@@ -167,14 +164,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-}
-
-/* Fade Header Effect */
-window.onscroll = function() {
-    var header = document.querySelector("header");
-    if (window.pageYOffset > 50) {
-        header.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-    } else {
-        header.style.backgroundColor = "rgba(0, 0, 0, 1)";
-    }
 }
