@@ -8,15 +8,15 @@
 
 body {
     line-height: 1.6;
-    color: #fff; /* Default text color set to white */
-    background-color: #000; /* Default background color set to black */
+    color: #333;
+    background-color: #f5f5f5;
     padding-top: 70px;
 }
 
 /* Header */
 header {
-    background-color: #000; /* Set header background to black */
-    color: #fff; /* Set header text color to white */
+    background-color: #fff;
+    color: #000;
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -25,7 +25,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease; /* For fading effect */
 }
 
 .header-container {
@@ -50,7 +51,6 @@ header {
 .company-name {
     font-size: 24px;
     font-weight: 600;
-    color: #fff; /* Set company name text to white */
 }
 
 nav ul {
@@ -63,17 +63,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* Set navigation text to white */
+    color: #000;
     text-decoration: none;
     font-size: 16px;
     padding: 5px 10px;
-    border: 1px solid #fff; /* Add a white border for button effect */
-    border-radius: 5px;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #000;
-    background-color: #fff; /* Invert colors on hover */
+    color: #666;
 }
 
 /* Hero Section */
@@ -93,21 +91,21 @@ nav ul li a:hover {
 }
 
 .side-image {
-    width: 30%;
-    height: 500px;
+    width: 30%; /* Adjust size of side images */
+    height: 500px; /* Fixed height for uniformity */
     object-fit: cover;
 }
 
 .hero-text-container {
-    background-color: #000; /* Black background for text box */
-    color: #fff; /* White text */
-    width: 40%;
+    background-color: #000;
+    color: #fff;
+    width: 40%; /* Central container for text */
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 500px;
+    height: 500px; /* Match the height of the side images */
 }
 
 .contact-button {
@@ -120,6 +118,7 @@ nav ul li a:hover {
     border: 2px solid #fff;
     border-radius: 5px;
     transition: background-color 0.3s;
+    font-size: 14px;
 }
 
 .contact-button:hover {
@@ -132,8 +131,8 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #000; /* Match with black background */
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     padding: 20px 0;
     text-align: center;
 }
@@ -155,7 +154,7 @@ nav ul li a:hover {
 
 .feature-description {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
 /* Footer */
