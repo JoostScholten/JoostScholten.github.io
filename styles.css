@@ -86,12 +86,13 @@ nav ul li a:hover {
 .hero-image-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
 .side-image {
     width: 30%; /* Adjust size of side images */
-    height: 400px; /* Fixed height for uniformity */
+    height: 500px; /* Fixed height for uniformity */
     object-fit: cover;
 }
 
@@ -104,6 +105,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 500px; /* Match the height of the side images */
 }
 
 .contact-button {
@@ -161,14 +163,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-}
-
-/* Fade Header Effect */
-window.onscroll = function() {
-    var header = document.querySelector("header");
-    if (window.pageYOffset > 50) {
-        header.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
-    } else {
-        header.style.backgroundColor = "rgba(255, 255, 255, 1)";
-    }
 }
