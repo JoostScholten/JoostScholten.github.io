@@ -62,5 +62,17 @@
     <footer>
         <p>&copy; 2024 Kipintel. All rights reserved.</p>
     </footer>
+
+    <script>
+        // JavaScript to make the header less visible when scrolling down
+        window.onscroll = function() {
+            var header = document.querySelector("header");
+            if (window.pageYOffset > 50) {
+                header.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
+            } else {
+                header.style.backgroundColor = "rgba(255, 255, 255, 1)";
+            }
+        };
+    </script>
 </body>
 </html>
