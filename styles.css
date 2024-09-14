@@ -25,8 +25,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #fff; /* Very thin white line at the bottom */
-    transition: background-color 0.3s ease; /* For fading effect */
+    border-bottom: 1px solid #fff; /* Thin white line at the bottom */
+    transition: background-color 0.3s ease; /* For smooth transition */
 }
 
 .header-container {
