@@ -1,40 +1,17 @@
-/* Reset */
-* {
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
-body {
-    line-height: 1.6;
-    color: #fff; /* Default text color set to white */
-    background-color: #000; /* Default background color set to black */
-    padding-top: 70px;
-}
-
-/* Header */
-header {
-    background-color: #000; /* Keep header background black */
-    color: #fff; /* Set header text color to white */
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #fff; /* Thin white line at the bottom */
-    transition: background-color 0.3s ease; /* For smooth transition */
-}
-
+/* Header styles */
 .header-container {
-    width: 90%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #000;
+    padding: 10px;
 }
 
 .logo-container {
@@ -43,38 +20,20 @@ header {
 }
 
 .logo {
-    height: 40px;
-    width: auto;
+    height: 50px;
     margin-right: 10px;
-}
-
-.company-name {
-    font-size: 24px;
-    font-weight: 600;
-    color: #fff; /* Set company name text to white */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
+    gap: 20px;
 }
 
 nav ul li a {
-    color: #fff; /* Set navigation text to white */
     text-decoration: none;
-    font-size: 16px;
-    padding: 5px 10px;
-    border: 1px solid #fff; /* Add a white border for button effect */
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    color: #000;
-    background-color: #fff; /* Invert colors on hover */
+    color: white;
+    font-weight: bold;
 }
 
 /* Hero Section */
@@ -82,87 +41,84 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
-    position: relative;
+    background-color: #000;
+    padding: 20px;
 }
 
 .hero-image-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
 .side-image {
-    width: 30%;
-    height: 500px;
-    object-fit: cover;
+    width: 40%;
+    height: auto;
 }
 
 .hero-text-container {
-    background-color: #000; /* Black background for text box */
-    color: #fff; /* White text */
-    width: 40%;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 500px;
+    width: 60%;
 }
 
+/* White box styling */
+.white-box {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact button with golden color and mail icon */
 .contact-button {
     display: inline-block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #fff;
-    color: #000;
+    background-color: transparent;
+    color: #d4af37; /* Golden color */
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
     text-decoration: none;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
 }
 
-.contact-button:hover {
-    background-color: #ddd;
-    color: #000;
+.mail-icon {
+    width: 20px;
 }
 
-/* Features Section */
+/* Features section */
 .features {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    background-color: #000; /* Match with black background */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
 }
 
 .feature-item {
-    width: 30%;
+    text-align: center;
 }
 
-.feature-item h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.feature-item img {
-    width: 80px;
-    margin-bottom: 10px;
+.feature-logo {
+    width: 50px;
+    margin-bottom: 20px;
 }
 
 .feature-description {
     font-size: 14px;
-    font-weight: bold;
+    color: #666;
 }
 
-/* Footer */
+/* Footer styles */
 footer {
-    background-color: #000;
-    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
+    background-color: #000;
+    color: white;
 }
