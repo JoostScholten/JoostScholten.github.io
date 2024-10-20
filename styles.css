@@ -54,14 +54,14 @@ nav ul li a:hover {
 /* Image Section with Black Box */
 .image-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     padding: 50px;
 }
 
 .side-image {
-    width: 40%;
+    width: 45%; /* Set both images to take 45% of the width */
     height: auto;
 }
 
@@ -70,8 +70,9 @@ nav ul li a:hover {
     color: white;
     padding: 40px;
     text-align: center;
+    max-width: 300px; /* Restrict the max width of the black box */
     margin: 0 20px;
-    max-width: 400px;
+    flex-grow: 1; /* Allow the black box to take the remaining space */
 }
 
 .center-text-box h2 {
@@ -141,7 +142,7 @@ footer {
     }
 
     .side-image {
-        width: 100%;
+        width: 100%; /* Make the images fill the width on smaller screens */
     }
 
     .center-text-box {
