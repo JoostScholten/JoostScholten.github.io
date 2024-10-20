@@ -58,13 +58,14 @@ nav ul li a:hover {
     align-items: center;
     background-color: white;
     padding: 50px;
-    max-width: 1200px; /* Ensure the container has enough width */
-    margin: auto; /* Center the section horizontally */
+    max-width: 1200px;
+    margin: auto;
 }
 
 .side-image {
-    width: 45%; /* Set both images to take 45% of the width */
-    height: auto;
+    width: 40%; /* Set width of images */
+    height: 300px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images fill the space while keeping aspect ratio */
 }
 
 .center-text-box {
@@ -72,9 +73,9 @@ nav ul li a:hover {
     color: white;
     padding: 40px;
     text-align: center;
-    max-width: 300px;
+    max-width: 250px;
     margin: 0 20px;
-    flex-grow: 1; /* Allow the black box to take the remaining space */
+    flex-grow: 1;
 }
 
 .center-text-box h2 {
@@ -91,7 +92,7 @@ nav ul li a:hover {
 .contact-button {
     display: inline-block;
     background-color: transparent;
-    color: #d4af37; /* Golden color */
+    color: #d4af37;
     border: 2px solid #d4af37;
     font-size: 16px;
     font-weight: bold;
@@ -144,7 +145,8 @@ footer {
     }
 
     .side-image {
-        width: 100%; /* Make the images fill the width on smaller screens */
+        width: 100%; /* Make images fill the width on smaller screens */
+        height: 250px; /* Adjust the height on smaller screens */
     }
 
     .center-text-box {
