@@ -24,6 +24,13 @@ body {
     margin-right: 10px;
 }
 
+.company-name {
+    color: #fff; /* Set text to white */
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px; /* Add spacing if needed */
+}
+
 nav ul {
     list-style: none;
     display: flex;
