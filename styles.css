@@ -58,6 +58,8 @@ nav ul li a:hover {
     align-items: center;
     background-color: white;
     padding: 50px;
+    max-width: 1200px; /* Ensure the container has enough width */
+    margin: auto; /* Center the section horizontally */
 }
 
 .side-image {
@@ -70,7 +72,7 @@ nav ul li a:hover {
     color: white;
     padding: 40px;
     text-align: center;
-    max-width: 300px; /* Restrict the max width of the black box */
+    max-width: 300px;
     margin: 0 20px;
     flex-grow: 1; /* Allow the black box to take the remaining space */
 }
