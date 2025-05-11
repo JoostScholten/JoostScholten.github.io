@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Kipintel</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kipintel - Poultry Monitoring Solutions for Your Farm</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header -->
-    <header class="header-container">
-        <div class="logo-container">
-            <img src="logo.jpeg" alt="Kipintel Logo" class="logo">
-            <h1 class="company-name">Kipintel</h1>
+    <!-- Header Section -->
+    <header aria-label="Kipintel Main Header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="logo.jpeg" alt="Kipintel Logo" class="logo"> 
+                <h1 class="company-name">Kipintel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Section 1 -->
-    <section class="scroll-section">
-        <div class="scroll-text">
-            <h2>Smart insights from your chickens</h2>
-            <p>We monitor chicken health using computer vision. Get early warnings, objective measurements and valuable time savings, all without needing to measure manually.</p>
-        </div>
-        <img src="hero1.png" alt="Monitoring Example" class="scroll-image">
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Image Section with Black Box -->
+        <section class="image-section">
+            <img src="hero1.png" alt="Left Image" class="side-image">
+            <div class="center-text-box">
+                <h2>OPTIMISE YOUR FARM</h2>
+                <p>Increase your yield, reduce resource usage, decrease crop variation, and improve forecasting.</p>
+                <p>Need a phenotyping solution for your Vertical Farm or Greenhouse?</p>
+                <a href="#contact" class="contact-button">CONTACT US</a>
+            </div>
+            <img src="hero2.png" alt="Right Image" class="side-image">
+        </section>
 
-    <!-- Section 2 -->
-    <section class="scroll-section">
-        <div class="scroll-text">
-            <h2>Welfare meets productivity</h2>
-            <p>Healthy animals are productive animals. Kipintel gives you visibility into what happens in the barn — even when you’re not there.</p>
-        </div>
-        <img src="hero2.png" alt="Chicken Environment" class="scroll-image">
-    </section>
+        <!-- Features Section -->
+        <section class="features" aria-label="Poultry Monitoring Features">
+            <div class="feature-item">
+                <h3>Improve Health</h3>
+                <img src="health.svg" alt="Health Monitoring Logo" class="feature-logo">
+                <p class="feature-description">Manage the health of your chickens through data-driven insights.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Increase Productivity</h3>
+                <img src="productivity.svg" alt="Productivity Increase Logo" class="feature-logo">
+                <p class="feature-description">Directly benefit from strong and vital hens financially.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Continuous Oversight</h3>
+                <img src="continuous.svg" alt="Continuous Monitoring Logo" class="feature-logo">
+                <p class="feature-description">Quick and objective feedback from the hens themselves.</p>
+            </div>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Kipintel. All rights reserved.</p>
+    <!-- Footer Section -->
+    <footer aria-label="Kipintel Footer">
+        <p>&copy; 2024 Kipintel. All rights reserved. Version 2.</p>
     </footer>
 
 </body>
