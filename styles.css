@@ -1,165 +1,80 @@
-/* General styles */
+/* General Reset */
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fff;
+    color: #222;
 }
 
-/* Header styles */
-.header-container {
+/* Header */
+.header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #000;
-    padding: 10px;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
+    padding: 20px;
 }
 
 .logo {
     height: 50px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
-.company-name {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
+.title {
     color: white;
+    font-size: 26px;
     font-weight: bold;
-    padding: 5px 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav ul li a:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-/* Image Section with Black Box */
-.image-section {
+/* Section */
+.content-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    background-color: white;
-    padding: 50px;
-    max-width: 1200px;
-    margin: auto;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.side-image {
-    width: 40%; /* Set width of images */
-    height: 300px; /* Fixed height for images */
-    object-fit: cover; /* Ensures images fill the space while keeping aspect ratio */
-}
-
-.center-text-box {
-    background-color: black;
-    color: white;
-    padding: 40px;
+.content-section .text {
     text-align: center;
-    max-width: 250px;
-    margin: 0 20px;
-    flex-grow: 1;
+    margin-bottom: 30px;
 }
 
-.center-text-box h2 {
+.content-section h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.center-text-box p {
+.content-section p {
     font-size: 16px;
-    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-/* Contact button */
-.contact-button {
-    display: inline-block;
-    background-color: transparent;
-    color: #d4af37;
-    border: 2px solid #d4af37;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
-.contact-button:hover {
-    background-color: #d4af37;
-    color: #fff;
-}
-
-/* Features section */
-.features {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    background-color: #f4f4f4;
-}
-
-.feature-item {
-    text-align: center;
-}
-
-.feature-logo {
-    width: 50px;
-    margin-bottom: 20px;
-}
-
-.feature-description {
-    font-size: 14px;
-    color: #666;
-}
-
-/* Footer styles */
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #000;
-    color: white;
+    color: #fff;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .image-section {
+/* Responsive */
+@media (max-width: 600px) {
+    .header {
         flex-direction: column;
-        padding: 20px 0;
+        align-items: flex-start;
     }
 
-    .side-image {
-        width: 100%; /* Make images fill the width on smaller screens */
-        height: 250px; /* Adjust the height on smaller screens */
-    }
-
-    .center-text-box {
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .features {
-        flex-direction: column;
-    }
-
-    .feature-item {
-        width: 100%;
-        margin-bottom: 20px;
+    .title {
+        margin-top: 10px;
     }
 }
