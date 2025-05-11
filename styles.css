@@ -1,31 +1,165 @@
-.scroll-section {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
+/* General styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    background-color: #000;
+    padding: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.company-name {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Image Section with Black Box */
+.image-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.side-image {
+    width: 40%; /* Set width of images */
+    height: 300px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images fill the space while keeping aspect ratio */
+}
+
+.center-text-box {
+    background-color: black;
+    color: white;
+    padding: 40px;
     text-align: center;
+    max-width: 250px;
+    margin: 0 20px;
+    flex-grow: 1;
 }
 
-.scroll-image {
-    width: 100%;
-    max-width: 500px; /* smaller size */
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.scroll-text h2 {
+.center-text-box h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.scroll-text p {
+.center-text-box p {
     font-size: 16px;
-    line-height: 1.6;
-    max-width: 700px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Contact button */
+.contact-button {
+    display: inline-block;
+    background-color: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #d4af37;
+    color: #fff;
+}
+
+/* Features section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.feature-description {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-section {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .side-image {
+        width: 100%; /* Make images fill the width on smaller screens */
+        height: 250px; /* Adjust the height on smaller screens */
+    }
+
+    .center-text-box {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
