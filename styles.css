@@ -12,7 +12,7 @@ body{
   display:flex;align-items:center;
 }
 .header-content{display:flex;align-items:center;gap:14px;}
-.logo{height:65px;width:auto;}    /* logo slightly bigger */
+.logo{height:90px;width:auto;}    /* logo slightly bigger */
 .company-name{font-size:24px;font-weight:700;letter-spacing:.4px;}
 
 /* 6-px white line under header */
