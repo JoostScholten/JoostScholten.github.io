@@ -7,167 +7,128 @@
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #fff;
-  background-color: #121212;
+  background-color: #000;
+  color: white;
   line-height: 1.6;
 }
 
 /* HEADER */
 .site-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
   background-color: #000;
-  padding: 20px 20px;
-  z-index: 1000;
+  padding: 40px 20px 20px;
+  text-align: center;
 }
 
 .header-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .logo {
-  height: 70px;
+  height: 100px;
   width: auto;
-  margin-right: 15px;
-  object-fit: contain;
-}
-
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .company-name {
-  color: #fff;
-  font-size: 24px;
+  color: white;
+  font-size: 26px;
   font-weight: bold;
 }
 
-.author-name {
-  color: #aaa;
-  font-size: 14px;
-  font-weight: normal;
+/* Divider line below header */
+.divider {
+  height: 1px;
+  background-color: white;
+  opacity: 0.3;
+  width: 100%;
 }
 
-/* Add space for fixed header */
-body::before {
-  content: '';
-  display: block;
-  height: 110px; /* Adjusted for larger header */
-}
-
-/* HERO SECTION */
+/* HERO */
 .hero {
   background: url('hero2.png') center/cover no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 20px;
   position: relative;
+  padding: 0 20px;
 }
 
 .hero::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
   position: relative;
-  color: white;
-  max-width: 800px;
   z-index: 1;
+  max-width: 800px;
 }
 
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  color: white;
 }
 
 .hero-content p {
   font-size: 1.25rem;
   margin-bottom: 30px;
+  color: white;
 }
 
 .cta-button {
   padding: 12px 30px;
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 30px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
   font-weight: bold;
+  border-radius: 30px;
   font-size: 1rem;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: white;
+  color: black;
 }
 
-/* INTRO SECTION */
-.intro {
+/* SECTION STYLING */
+.section {
+  background-color: #000;
+  color: white;
   padding: 80px 20px;
-  background: #121212;
 }
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
-.intro-text {
-  flex: 1;
-}
-
-.intro-text h2 {
+.section h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.intro-text p {
-  font-size: 1.1rem;
-}
-
-.intro-image {
-  flex: 1;
+  margin-bottom: 40px;
   text-align: center;
 }
 
-.intro-image img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+.section p {
+  font-size: 1.05rem;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 /* FEATURES */
-.features {
-  padding: 80px 20px;
-  text-align: center;
-  background: #121212;
-}
-
-.features h2 {
-  font-size: 2rem;
-  margin-bottom: 50px;
-}
-
 .feature-grid {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
+  text-align: center;
 }
 
 .feature-item {
@@ -181,32 +142,16 @@ body::before {
 }
 
 .feature-item h3 {
-  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-.feature-item p {
-  font-size: 0.95rem;
-  color: #ccc;
-}
-
-/* HOW IT WORKS */
-.how-it-works {
-  padding: 80px 20px;
-  background: #121212;
-  text-align: center;
-}
-
-.how-it-works h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-}
-
+/* STEPS */
 .steps {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+  text-align: center;
 }
 
 .step {
@@ -214,32 +159,11 @@ body::before {
 }
 
 .step h4 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-.step p {
-  font-size: 1rem;
-  color: #ccc;
-}
-
-/* CONTACT */
-.contact {
-  padding: 80px 20px;
-  background: #121212;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.contact p {
-  margin-bottom: 40px;
-  font-size: 1.05rem;
-}
-
+/* FORM */
 form {
   max-width: 500px;
   margin: 0 auto;
@@ -250,22 +174,55 @@ form {
 
 input, textarea {
   padding: 12px;
-  border: 1px solid #ccc;
+  background-color: #111;
+  border: 1px solid #444;
+  color: white;
   border-radius: 6px;
   font-size: 1rem;
-  font-family: inherit;
-  background-color: #1e1e1e;
-  color: #fff;
 }
 
 textarea {
-  resize: vertical;
   min-height: 120px;
+  resize: vertical;
 }
 
 button[type="submit"] {
   padding: 12px;
-  background-color: transparent;
- 
-::contentReference[oaicite:0]{index=0}
- 
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: white;
+  color: black;
+}
+
+/* FOOTER */
+footer {
+  padding: 30px;
+  text-align: center;
+  background-color: #000;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .feature-grid, .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
