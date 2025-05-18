@@ -1,112 +1,271 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kipintel</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-content">
-      <img src="logo.jpg" alt="Kipintel Logo" class="logo">
-      <div class="logo-text">
-        <div class="company-name">Kipintel</div>
-        <div class="author-name">Joost Scholten</div>
-      </div>
-    </div>
-  </header>
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  background-color: #121212;
+  line-height: 1.6;
+}
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Smarter Poultry Monitoring</h1>
-      <p>Objective insights from your animals, for healthier flocks and better decisions.</p>
-      <a href="#contact" class="cta-button">Get in Touch</a>
-    </div>
-  </section>
+/* HEADER */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  padding: 20px 20px;
+  z-index: 1000;
+}
 
-  <!-- Introduction -->
-  <section class="intro">
-    <div class="container">
-      <div class="intro-text">
-        <h2>Who We Are</h2>
-        <p>Kipintel brings cutting-edge vision technology to the poultry sector. We help farmers track and improve animal welfare and performance in real time.</p>
-      </div>
-      <div class="intro-image">
-        <img src="hero1.png" alt="System in action">
-      </div>
-    </div>
-  </section>
+.header-content {
+  display: flex;
+  align-items: center;
+}
 
-  <!-- Divider -->
-  <div class="divider"></div>
+.logo {
+  height: 70px;
+  width: auto;
+  margin-right: 15px;
+  object-fit: contain;
+}
 
-  <!-- Features -->
-  <section class="features">
-    <h2>Key Benefits</h2>
-    <div class="feature-grid">
-      <div class="feature-item">
-        <img src="health.svg" alt="Health" />
-        <h3>Animal Health</h3>
-        <p>Spot issues early and respond fast with data-driven alerts.</p>
-      </div>
-      <div class="feature-item">
-        <img src="productivity.svg" alt="Productivity" />
-        <h3>Productivity</h3>
-        <p>Better conditions lead to higher output and efficiency.</p>
-      </div>
-      <div class="feature-item">
-        <img src="continuous.svg" alt="Continuous Monitoring" />
-        <h3>Continuous Oversight</h3>
-        <p>Always-on visibility without needing to be present.</p>
-      </div>
-    </div>
-  </section>
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  <!-- Divider -->
-  <div class="divider"></div>
+.company-name {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
 
-  <!-- How it Works -->
-  <section class="how-it-works">
-    <h2>How It Works</h2>
-    <div class="steps">
-      <div class="step">
-        <h4>1. Install</h4>
-        <p>Place our camera units in the barn.</p>
-      </div>
-      <div class="step">
-        <h4>2. Monitor</h4>
-        <p>Data is captured 24/7 and sent to our cloud.</p>
-      </div>
-      <div class="step">
-        <h4>3. Act</h4>
-        <p>Use alerts and insights to improve welfare and output.</p>
-      </div>
-    </div>
-  </section>
+.author-name {
+  color: #aaa;
+  font-size: 14px;
+  font-weight: normal;
+}
 
-  <!-- Divider -->
-  <div class="divider"></div>
+/* Add space for fixed header */
+body::before {
+  content: '';
+  display: block;
+  height: 110px; /* Adjusted for larger header */
+}
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>Interested in our solution? Drop us a line.</p>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+/* HERO SECTION */
+.hero {
+  background: url('hero2.png') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Kipintel. All rights reserved.</p>
-  </footer>
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
 
-</body>
-</html>
+.hero-content {
+  position: relative;
+  color: white;
+  max-width: 800px;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 12px 30px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* INTRO SECTION */
+.intro {
+  padding: 80px 20px;
+  background: #121212;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+}
+
+.intro-image {
+  flex: 1;
+  text-align: center;
+}
+
+.intro-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* FEATURES */
+.features {
+  padding: 80px 20px;
+  text-align: center;
+  background: #121212;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.feature-item {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.feature-item img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* HOW IT WORKS */
+.how-it-works {
+  padding: 80px 20px;
+  background: #121212;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.step {
+  max-width: 300px;
+}
+
+.step h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* CONTACT */
+.contact {
+  padding: 80px 20px;
+  background: #121212;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  background-color: transparent;
+ 
+::contentReference[oaicite:0]{index=0}
+ 
