@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #222;
-  background-color: #fff;
+  color: #fff;
+  background-color: #121212;
   line-height: 1.6;
 }
 
@@ -18,7 +18,7 @@ body {
   top: 0;
   width: 100%;
   background-color: #000;
-  padding: 10px 20px;
+  padding: 20px 20px;
   z-index: 1000;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 .logo {
-  height: 50px;
+  height: 70px;
   width: auto;
   margin-right: 15px;
   object-fit: contain;
@@ -42,7 +42,7 @@ body {
 
 .company-name {
   color: #fff;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -50,6 +50,13 @@ body {
   color: #aaa;
   font-size: 14px;
   font-weight: normal;
+}
+
+/* Add space for fixed header */
+body::before {
+  content: '';
+  display: block;
+  height: 110px; /* Adjusted for larger header */
 }
 
 /* HERO SECTION */
@@ -90,22 +97,24 @@ body {
 
 .cta-button {
   padding: 12px 30px;
-  background-color: #4CAF50;
-  color: white;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
   border-radius: 30px;
   font-weight: bold;
   font-size: 1rem;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #3c9742;
+  background-color: #fff;
+  color: #000;
 }
 
 /* INTRO SECTION */
 .intro {
   padding: 80px 20px;
-  background: #f8f8f8;
+  background: #121212;
 }
 
 .container {
@@ -146,7 +155,7 @@ body {
 .features {
   padding: 80px 20px;
   text-align: center;
-  background: white;
+  background: #121212;
 }
 
 .features h2 {
@@ -178,18 +187,13 @@ body {
 
 .feature-item p {
   font-size: 0.95rem;
-  color: #555;
-}
-body::before {
-  content: '';
-  display: block;
-  height: 70px;
+  color: #ccc;
 }
 
 /* HOW IT WORKS */
 .how-it-works {
   padding: 80px 20px;
-  background: #f0f0f0;
+  background: #121212;
   text-align: center;
 }
 
@@ -216,13 +220,13 @@ body::before {
 
 .step p {
   font-size: 1rem;
-  color: #444;
+  color: #ccc;
 }
 
 /* CONTACT */
 .contact {
   padding: 80px 20px;
-  background: #fff;
+  background: #121212;
   text-align: center;
 }
 
@@ -250,6 +254,8 @@ input, textarea {
   border-radius: 6px;
   font-size: 1rem;
   font-family: inherit;
+  background-color: #1e1e1e;
+  color: #fff;
 }
 
 textarea {
@@ -259,59 +265,7 @@ textarea {
 
 button[type="submit"] {
   padding: 12px;
-  background-color: #4CAF50;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button[type="submit"]:hover {
-  background-color: #3c9742;
-}
-
-/* FOOTER */
-footer {
-  padding: 30px;
-  text-align: center;
-  background-color: #000;
-  color: #fff;
-  font-size: 0.9rem;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .feature-grid, .steps {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  .cta-button {
-    font-size: 0.95rem;
-    padding: 10px 25px;
-  }
-
-  .header-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .company-name {
-    margin-top: 8px;
-    font-size: 20px;
-  }
-}
+  background-color: transparent;
+ 
+::contentReference[oaicite:0]{index=0}
+ 
