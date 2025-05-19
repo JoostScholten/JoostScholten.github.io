@@ -10,7 +10,7 @@ body{
 .site-header{
   position:fixed;top:0;left:0;width:100%;z-index:1000;
   background:#000;
-  height:92px;                    /* 80 logo + 6 top + 6 bottom padding */
+  height:92px;                    /* 80-px logo + 12-px padding */
   padding:6px 32px;
   display:flex;align-items:center
 }
@@ -80,7 +80,6 @@ footer{padding:30px;text-align:center;background:#000;color:#aaa;font-size:.9rem
 /* ───────── RESPONSIVE ───────── */
 @media(max-width:768px){
   .feature-grid,.steps{flex-direction:column;align-items:center;gap:48px}
-  .site-header{padding:6px 20px}
   .hero{height:75vh;max-height:500px;margin-top:98px}
   .image-strip img{height:60vh;max-height:420px}
   .hero-content h1{font-size:2.2rem}
