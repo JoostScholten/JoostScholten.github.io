@@ -72,20 +72,15 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   flex-shrink: 0;
 }
 .header__logo-img {
-  width: 32px;
-  height: 32px;
+  height: 36px;
+  width: auto;
+  max-width: 160px;
   border-radius: 0;
   object-fit: contain;
-}
-.header__logo-text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 1.05rem;
-  letter-spacing: -0.01em;
+  mix-blend-mode: screen;
 }
 
 /* === Nav === */
@@ -635,21 +630,14 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .footer__logo {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 .footer__logo-img {
-  width: 28px;
-  height: 28px;
+  height: 30px;
+  width: auto;
+  max-width: 140px;
   border-radius: 0;
   object-fit: contain;
-}
-.footer__logo-text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-}
-.footer__logo-text {
-  font-weight: 700;
-  font-size: 0.95rem;
+  mix-blend-mode: screen;
 }
 .footer__links {
   display: flex;
