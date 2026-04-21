@@ -8,6 +8,9 @@
   <link rel="canonical" href="https://www.kipintel.nl/">
   <link rel="alternate" hreflang="nl" href="https://www.kipintel.nl/">
   <link rel="alternate" hreflang="en" href="https://www.kipintel.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
@@ -16,7 +19,7 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#home" class="header__logo">
-        <img src="../assets/images/logo.jpg" alt="KipIntel logo" class="header__logo-img">
+        <img src="../assets/images/logo.png" alt="KipIntel logo" class="header__logo-img">
         <span class="header__logo-text">KipIntel</span>
       </a>
       <nav class="nav" aria-label="Hoofdnavigatie">
@@ -52,7 +55,7 @@
   <!-- ======================== HERO ======================== -->
   <section class="hero" id="home">
     <div class="hero__bg">
-      <img src="../assets/images/hero2.png" alt="Pluimveestal bewaakt door KipIntel" class="hero__img">
+      <img src="../assets/images/hero-bg.jpg" alt="Pluimveestal bewaakt door KipIntel" class="hero__img">
       <div class="hero__overlay"></div>
     </div>
     <div class="container hero__content">
@@ -109,7 +112,7 @@
     <div class="container">
       <div class="showcase">
         <div class="showcase__img-wrap">
-          <img src="../assets/images/welfare.png" alt="Dashboard veerkwaliteitsscore" class="showcase__img">
+          <img src="../assets/images/detections.jpg" alt="Dashboard veerkwaliteitsscore" class="showcase__img">
         </div>
         <div class="showcase__text">
           <span class="showcase__label">Product 01</span>
@@ -130,8 +133,11 @@
   <section class="section" id="mite-monitoring">
     <div class="container">
       <div class="showcase showcase--reverse">
-        <div class="showcase__img-wrap">
-          <img src="../assets/images/detections.jpg" alt="Nachtactiviteitsanalyse voor spintdetectie" class="showcase__img">
+        <div class="showcase__img-placeholder">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+          </svg>
+          Bewegingsheatmap &middot; binnenkort beschikbaar
         </div>
         <div class="showcase__text">
           <span class="showcase__label">Product 02</span>
@@ -267,7 +273,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <a href="#home" class="footer__logo">
-        <img src="../assets/images/logo.jpg" alt="KipIntel" class="footer__logo-img">
+        <img src="../assets/images/logo.png" alt="KipIntel" class="footer__logo-img">
         <span class="footer__logo-text">KipIntel</span>
       </a>
       <nav class="footer__links" aria-label="Footernavigatie">

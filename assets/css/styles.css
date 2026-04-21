@@ -78,13 +78,14 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .header__logo-img {
   width: 32px;
   height: 32px;
-  border-radius: 6px;
-  object-fit: cover;
+  border-radius: 0;
+  object-fit: contain;
 }
 .header__logo-text {
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 1.05rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 /* === Nav === */
@@ -371,6 +372,23 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   background: var(--surface-raised);
   aspect-ratio: 16/10;
 }
+.showcase__img-placeholder {
+  border-radius: var(--radius);
+  border: 1px dashed var(--border-hover);
+  background: var(--surface-raised);
+  aspect-ratio: 16/10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--text-subtle);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.showcase__img-placeholder svg { opacity: 0.25; }
 .showcase__img {
   width: 100%;
   height: 100%;
@@ -622,8 +640,12 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .footer__logo-img {
   width: 28px;
   height: 28px;
-  border-radius: 5px;
-  object-fit: cover;
+  border-radius: 0;
+  object-fit: contain;
+}
+.footer__logo-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 .footer__logo-text {
   font-weight: 700;
