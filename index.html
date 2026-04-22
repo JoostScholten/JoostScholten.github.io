@@ -1,74 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KipIntel</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KipIntel &mdash; Autonomous Poultry Monitoring</title>
+  <meta name="description" content="An AI powered camera system for healthier, more productive poultry flocks. Feather quality scoring and poultry mite monitoring.">
+  <link rel="canonical" href="https://www.kipintel.com/">
+  <link rel="alternate" hreflang="en" href="https://www.kipintel.com/">
+  <link rel="alternate" hreflang="nl" href="https://www.kipintel.nl/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
 <body>
 
-  <!-- Fixed header -->
-  <header class="site-header">
-    <div class="header-content">
-      <img src="logo.jpg" alt="Kipintel logo" class="logo">
-      <span class="company-name">KipIntel</span>
+  <!-- ======================== HEADER ======================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="header__logo">
+        <img src="assets/images/Logo.png" alt="KipIntel" class="header__logo-img">
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#products" class="nav__link">Our Software</a>
+        <a href="#team" class="nav__link">Team</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <div class="header__actions">
+        <a href="https://www.kipintel.nl" class="lang-toggle" title="Bekijk de Nederlandse versie">
+          <span class="lang-toggle__flag">&#127475;&#127473;</span>
+          <span class="lang-toggle__label">NL</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- 6-px white line -->
-  <div class="separator"></div>
+  <!-- Mobile nav overlay -->
+  <nav class="nav-overlay" id="nav-overlay" aria-label="Mobile navigation">
+    <a href="#products" class="nav-overlay__link">Our Software</a>
+    <a href="#team" class="nav-overlay__link">Team</a>
+    <a href="#contact" class="nav-overlay__link">Contact</a>
+    <div class="nav-overlay__lang">
+      <a href="https://www.kipintel.nl" class="lang-toggle">
+        <span class="lang-toggle__flag">&#127475;&#127473;</span>
+        <span class="lang-toggle__label">Switch to Dutch</span>
+      </a>
+    </div>
+  </nav>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <!-- NEW copy -->
-      <h1>Autonomous Poultry Monitoring</h1>
-      <p>Real-time insights for healthier, more productive birds</p>
-      <a href="#contact" class="cta-button">Get in Touch</a>
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <img src="assets/images/hero2.png" alt="Poultry farm monitored by KipIntel" class="hero__img">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="container hero__content">
+      <span class="hero__badge">AgriTech &middot; AI Vision</span>
+      <h1 class="hero__title">Autonomous Poultry<br>Monitoring</h1>
+      <p class="hero__subtitle">An AI powered camera system for healthier, more productive flocks.</p>
+      <div class="hero__ctas">
+        <a href="#contact" class="btn btn--primary">Get in touch</a>
+        <a href="#products" class="btn btn--outline">See our software</a>
+      </div>
     </div>
   </section>
 
-  <!-- How it Works -->
-  <section class="section" id="how">
+  <!-- ======================== PRODUCTS OVERVIEW ======================== -->
+  <section class="section" id="products">
     <div class="container">
-      <h2>How It Works</h2>
+      <div class="section__header">
+        <span class="section__label">Products</span>
+        <h2 class="section__title">Our Software</h2>
+        <p class="section__desc">Providing clear insights into your flock's health and behaviour every day. AI powered and developed together with poultry farmers and veterinarians.</p>
+      </div>
+      <div class="products-grid">
+
+        <a href="#feather-scoring" class="product-card">
+          <div class="product-card__header">
+            <div class="product-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/>
+                <line x1="16" y1="8" x2="2" y2="22"/>
+                <line x1="17.5" y1="15" x2="9" y2="15"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Feather Quality Scoring</h3>
+          </div>
+          <p class="product-card__desc">Continuous scoring of feather condition across your flock. Spot welfare issues before they affect your birds.</p>
+          <span class="product-card__link">Read more &#8594;</span>
+        </a>
+
+        <a href="#mite-monitoring" class="product-card">
+          <div class="product-card__header">
+            <div class="product-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Poultry Mite Monitoring</h3>
+          </div>
+          <p class="product-card__desc">Night activity analysis for early red mite detection. Catch infestations before they take hold.</p>
+          <span class="product-card__link">Read more &#8594;</span>
+        </a>
+
+        <div class="product-card product-card--soon">
+          <div class="product-card__header">
+            <div class="product-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="5"/>
+                <circle cx="12" cy="12" r="1" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Rooster Tracking</h3>
+          </div>
+          <p class="product-card__desc">Insights in rooster activity and mating behaviour. Optimize management decisions for a balanced flock.</p>
+          <span class="product-card__badge">Coming soon</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FEATHER QUALITY SCORING ======================== -->
+  <section class="section section--alt" id="feather-scoring">
+    <div class="container">
+      <div class="showcase">
+        <div class="showcase__img-wrap">
+          <img src="assets/images/detections.jpg" alt="Feather quality scoring dashboard" class="showcase__img">
+        </div>
+        <div class="showcase__text">
+          <span class="showcase__label">01</span>
+          <h2 class="showcase__title">Feather Quality Scoring</h2>
+          <p class="showcase__desc">Our camera system continuously scores feather condition across the flock, replacing hours of manual inspection with objective measurements. Spot deterioration early, make comparisons with previous flocks, and let data support your decisions.</p>
+          <ul class="showcase__features">
+            <li class="showcase__feature">Per-bird scoring, updated continuously throughout the day</li>
+            <li class="showcase__feature">Trend detection over time, revealing deterioration at an early stage</li>
+            <li class="showcase__feature">Year-on-year comparison to track improvement and learn from your data</li>
+            <li class="showcase__feature">Non invasive: camera based, no handling required</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== POULTRY MITE MONITORING ======================== -->
+  <section class="section" id="mite-monitoring">
+    <div class="container">
+      <div class="showcase showcase--reverse">
+        <div class="showcase__img-wrap">
+          <img src="assets/images/HeatmapNightActivity.png" alt="Night activity heatmap for mite monitoring" class="showcase__img">
+        </div>
+        <div class="showcase__text">
+          <span class="showcase__label">02</span>
+          <h2 class="showcase__title">Poultry Mite Monitoring</h2>
+          <p class="showcase__desc">Red mites are most active at night, making them notoriously hard to detect before an infestation becomes severe. Our system monitors flock activity patterns during dark hours, identifying restless behavior that indicates mite presence days or weeks before visible signs appear.</p>
+          <ul class="showcase__features">
+            <li class="showcase__feature">Night mode camera analysis of flock behavior</li>
+            <li class="showcase__feature">Early warning alerts based on activity anomalies</li>
+            <li class="showcase__feature">More accurately plan and execute treatments for maximal effect</li>
+            <li class="showcase__feature">Keep birds productive and prevent losses from stress and disrupted rest</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== HOW IT WORKS ======================== -->
+  <section class="section section--alt" id="how-it-works">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Process</span>
+        <h2 class="section__title">How It Works</h2>
+        <p class="section__desc">From installation to insights in three straightforward steps.</p>
+      </div>
       <div class="steps">
-        <div class="step"><span class="step-num">1</span><h4>Setup</h4><p>Install a camera system in your barn. This is not complicated, simply plug & play.</p></div>
-        <div class="step"><span class="step-num">2</span><h4>Monitor</h4><p>Data of your flock is sent to the cloud and processed by our algortihms.</p></div>
-        <div class="step"><span class="step-num">3</span><h4>Act</h4><p>Use real-time dashboard insights to act quickly and confidently.</p></div>
+        <div class="step">
+          <div class="step__number">01</div>
+          <div>
+            <h3 class="step__title">Setup</h3>
+            <p class="step__desc">Plug and play camera installation in your barn. No construction work, no complex wiring. Up and running within a day.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__number">02</div>
+          <div>
+            <h3 class="step__title">Monitor</h3>
+            <p class="step__desc">Your video feed is processed around the clock, turning raw footage into clear insights and visualisations.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__number">03</div>
+          <div>
+            <h3 class="step__title">Act</h3>
+            <p class="step__desc">A real-time dashboard and alerts give you the information to intervene early, reduce losses, and keep your flock healthy.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Illustrative image -->
-  <section class="image-strip">
-    <img src="detections.jpg" alt="Detection overlay">
-  </section>
-
-  <!-- Key Benefits -->
-  <section class="section" id="benefits">
+  <!-- ======================== TEAM ======================== -->
+  <section class="section" id="team">
     <div class="container">
-      <h2>Why KipIntel?</h2>
-      <div class="feature-grid">
-        <div class="feature-item"><img src="health.svg" alt=""><h3>Health</h3><p>Detect problems early and respond faster with data-driven alerts.</p></div>
-        <div class="feature-item"><img src="productivity.svg" alt=""><h3>Productivity</h3><p>Strong and vital birds delivers higher production while cutting health-related losses. </p></div>
-        <div class="feature-item"><img src="continuous.svg" alt=""><h3>Continuous Oversight</h3><p>Always keep track of your most important asset, your flock.</p></div>
+      <div class="section__header">
+        <span class="section__label">Team</span>
+        <h2 class="section__title">The People Behind KipIntel</h2>
+        <p class="section__desc">A team combining expertise in AI, computer vision, and agricultural science.</p>
+      </div>
+      <div class="team-grid">
+
+        <div class="team-card">
+          <img src="assets/images/ProfilePictureJoost.jpeg" alt="Joost Scholten" class="team-card__photo">
+          <div class="team-card__body">
+            <p class="team-card__name">Joost Scholten</p>
+            <p class="team-card__role">Founder</p>
+            <a href="https://www.linkedin.com/in/joostscholten99/" class="team-card__linkedin" target="_blank" rel="noopener noreferrer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="assets/images/ProfilePictureNaftali.jpeg" alt="Naftali Slob" class="team-card__photo">
+          <div class="team-card__body">
+            <p class="team-card__name">Naftali Slob</p>
+            <p class="team-card__role">Co-founder</p>
+            <a href="https://www.linkedin.com/in/naftali-slob-445634160/" class="team-card__linkedin" target="_blank" rel="noopener noreferrer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section" id="contact">
+  <!-- ======================== CONTACT ======================== -->
+  <section class="section section--alt" id="contact">
     <div class="container">
-      <h2>Contact Us</h2>
-      <p>Interested in our solution? Send us an email at: info@kipintel.nl</p>
-      <a href="mailto:info@kipintel.nl?subject=Website%20Enquiry" class="cta-button">Email KipIntel</a>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2 class="contact-info__title">Let&rsquo;s talk</h2>
+          <p class="contact-info__desc">Curious about our technology, interested in a pilot, or just want to get to know us? We would love to hear from you.</p>
+          <a href="mailto:info@kipintel.nl" class="contact-info__email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            info@kipintel.nl
+          </a>
+        </div>
+
+        <!--
+          Contact form via Formspree (free tier).
+          1. Sign up at https://formspree.io
+          2. Create a form → copy your form ID
+          3. Replace YOUR_FORM_ID below with the real ID
+        -->
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xdaylnvj"
+          method="POST"
+        >
+          <div class="form-group">
+            <label class="form-label" for="name-en">Name</label>
+            <input class="form-input" type="text" id="name-en" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email-en">Email</label>
+            <input class="form-input" type="email" id="email-en" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message-en">Message</label>
+            <textarea class="form-textarea" id="message-en" name="message" placeholder="Tell us about your farm, project, or question..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary form-submit">Send message</button>
+        </form>
+
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer><p>&copy; 2025 KipIntel. All rights reserved.</p></footer>
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="footer__logo">
+        <img src="assets/images/Logo.png" alt="KipIntel" class="footer__logo-img">
+      </a>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="#products" class="footer__link">Our Software</a>
+        <a href="#team" class="footer__link">Team</a>
+        <a href="#contact" class="footer__link">Contact</a>
+      </nav>
+      <div class="footer__right">
+        <a href="https://www.kipintel.nl" class="lang-toggle" title="Nederlandse versie">
+          <span class="lang-toggle__flag">&#127475;&#127473;</span>
+          <span class="lang-toggle__label">NL</span>
+        </a>
+        <span class="footer__copy">&copy; 2025 KipIntel</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

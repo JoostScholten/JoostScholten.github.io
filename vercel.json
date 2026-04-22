@@ -1,0 +1,18 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/nl/",
+      "has": [
+        { "type": "host", "value": "kipintel.nl" }
+      ]
+    },
+    {
+      "source": "/",
+      "destination": "/nl/",
+      "has": [
+        { "type": "host", "value": "www.kipintel.nl" }
+      ]
+    }
+  ]
+}
