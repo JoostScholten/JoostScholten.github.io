@@ -80,7 +80,6 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   max-width: 200px;
   border-radius: 0;
   object-fit: contain;
-  mix-blend-mode: screen;
 }
 
 /* === Nav === */
@@ -659,7 +658,6 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   max-width: 220px;
   border-radius: 0;
   object-fit: contain;
-  mix-blend-mode: screen;
 }
 .footer__links {
   display: flex;
