@@ -75,9 +75,9 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   flex-shrink: 0;
 }
 .header__logo-img {
-  height: 36px;
+  height: 48px;
   width: auto;
-  max-width: 160px;
+  max-width: 200px;
   border-radius: 0;
   object-fit: contain;
   mix-blend-mode: screen;
@@ -307,15 +307,15 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   transform: translateY(-3px);
 }
 .product-card__icon {
-  width: 48px;
-  height: 48px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--surface-raised);
   border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  margin-bottom: 24px;
+  border-radius: var(--radius);
+  margin-bottom: 28px;
   color: var(--green);
 }
 .section--alt .product-card__icon { background: var(--bg); }
