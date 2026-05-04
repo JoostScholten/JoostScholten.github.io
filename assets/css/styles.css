@@ -120,7 +120,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   transition: color var(--transition), border-color var(--transition);
 }
 .lang-toggle:hover { color: var(--text); border-color: var(--border-hover); }
-.lang-toggle__flag { font-size: 1rem; line-height: 1; }
+.lang-toggle__flag { display: block; width: 20px; height: 12px; border-radius: 1px; flex-shrink: 0; }
 
 /* === Hamburger === */
 .hamburger {
